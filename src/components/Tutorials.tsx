@@ -1,21 +1,30 @@
 const tutorials = [
   {
     title: "Building a Real-Time Voice Agent with OpenAI Realtime API",
-    description: "Walk through how I built a production voice simulation tool — from API setup to streaming audio to deployment. Not a tutorial app — a real system.",
+    description:
+      "Walk through how I built a production voice simulation tool — from API setup to streaming audio to deployment. Not a tutorial app — a real system.",
     duration: "12 min",
     tags: ["Voice AI", "Realtime API", "Streaming"],
+    thumbnailClass: "tutorial-thumb tutorial-thumb-1",
+    youtubeUrl: "#",
   },
   {
     title: "Automating Workflows with AI Coding Agents",
-    description: "How I use Codex and other AI agents to automate end-to-end workflows — from generation to review to deployment. 60% time reduction, no hype.",
+    description:
+      "How I use Codex and other AI agents to automate end-to-end workflows — from generation to review to deployment. 60% time reduction, no hype.",
     duration: "8 min",
     tags: ["Codex", "Agents", "Automation"],
+    thumbnailClass: "tutorial-thumb tutorial-thumb-2",
+    youtubeUrl: "#",
   },
   {
     title: "Building a RAG Pipeline That Actually Works in Production",
-    description: "Step-by-step: chunking strategies, embedding selection, retrieval tuning, and the stuff nobody talks about — like latency budgets and failure modes.",
+    description:
+      "Step-by-step: chunking strategies, embedding selection, retrieval tuning, and the stuff nobody talks about — like latency budgets and failure modes.",
     duration: "15 min",
     tags: ["RAG", "Vector Search", "Production"],
+    thumbnailClass: "tutorial-thumb tutorial-thumb-3",
+    youtubeUrl: "#",
   },
 ];
 
@@ -30,29 +39,45 @@ export default function Tutorials() {
             Watch me build it, not just talk about it
           </h2>
           <p className="text-lg text-[#4d4d4d] leading-relaxed">
-            Every tutorial is a real build of a real system. No theory, no slides — just working code and the decisions behind it.
+            Every tutorial is a real build of a real system. No theory, no
+            slides — just working code and the decisions behind it.
           </p>
         </div>
 
         {/* Tutorial cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {tutorials.map((tutorial, i) => (
-            <a
+            <div
               key={i}
-              href="#"
-              className="group block rounded-xl bg-white shadow-border-card hover:shadow-border-hover transition-shadow duration-200 overflow-hidden"
+              className="group block rounded-xl bg-white shadow-border-card hover:shadow-border-hover transition-all duration-300 overflow-hidden"
             >
-              {/* Video placeholder */}
-              <div className="aspect-video video-placeholder flex items-center justify-center" />
+              {/* Video placeholder with distinct visual */}
+              <div
+                className={`aspect-video flex items-center justify-center ${tutorial.thumbnailClass}`}
+              >
+                {/* Play button overlay */}
+                <div className="relative z-10 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8 5v14l11-7z"
+                      fill="white"
+                      fillOpacity="0.9"
+                    />
+                  </svg>
+                </div>
+                {/* Duration badge */}
+                <div className="absolute bottom-3 right-3 px-2 py-1 rounded-md bg-black/60 backdrop-blur-sm text-xs text-white font-mono">
+                  {tutorial.duration}
+                </div>
+              </div>
 
               {/* Content */}
               <div className="p-5">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs font-mono text-[#808080] flex items-center gap-1">
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v6l4 2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.2"/></svg>
-                    {tutorial.duration}
-                  </span>
-                </div>
                 <h3 className="text-base font-semibold tracking-[-0.02em] text-[#171717] mb-2 group-hover:text-[#5e6ad2] transition-colors leading-snug">
                   {tutorial.title}
                 </h3>
@@ -63,13 +88,16 @@ export default function Tutorials() {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5">
                   {tutorial.tags.map((tag, j) => (
-                    <span key={j} className="text-[11px] font-medium text-[#808080] bg-[#fafafa] px-2 py-0.5 rounded-full">
+                    <span
+                      key={j}
+                      className="text-[11px] font-medium text-[#808080] bg-[#fafafa] px-2 py-0.5 rounded-full"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
