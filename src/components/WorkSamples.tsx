@@ -48,10 +48,10 @@ export default function WorkSamples() {
                 Customer Simulator
               </h3>
               <p className="text-sm md:text-base text-[#4d4d4d] leading-relaxed mb-4">
-                A real-time voice simulation system built on OpenAI&apos;s Realtime
-                API. Agents practice customer conversations against a lifelike AI
-                opponent — deployed daily in production training. Cut platform
-                costs by 80% and reduced time-to-competence from 6 weeks to 2.5.
+                Production voice agent system built on OpenAI Realtime API.
+                Handles thousands of daily sessions with sub-second latency.
+                80% platform cost reduction. 6 weeks → 2.5 weeks
+                time-to-competence.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Voice AI", "Realtime API", "Agents"].map((tag) => (

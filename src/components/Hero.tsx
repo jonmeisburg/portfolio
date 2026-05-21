@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl leading-relaxed text-[#4d4d4d] mb-8 max-w-2xl">
-            13+ years shipping production systems at Microsoft and Expedia. Specialized in OpenAI APIs, real-time voice agents, RAG pipelines, and AI workflow automation.
+            Senior AI Engineer at Chewy. Built production systems used by 2,000+ agents daily. Specialized in OpenAI Realtime API, RAG pipelines, and agent workflows.
           </p>
 
           <div className="flex flex-wrap gap-3">

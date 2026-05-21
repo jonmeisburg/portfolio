@@ -25,22 +25,23 @@ export default function About() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.04em] text-[#171717] mb-6">
-              Applied AI, built for real people
+              Production AI, built for real use
             </h2>
             <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
               <p className="text-lg">
-                I&apos;m a Senior Applied AI Systems Engineer at Chewy, where I build
-                AI-powered coaching, workflow automation, and performance support
-                systems used by thousands of agents daily. My work sits at the
-                intersection of real-time voice AI, retrieval architectures, and
-                production pipeline design.
+                I&apos;m a Senior AI Engineer at Chewy, where I build production AI
+                systems — real-time voice agents, retrieval pipelines, and agent
+                automation — used by thousands of operators daily. My work sits at
+                the intersection of production AI infrastructure and real-world
+                operational workflows.
               </p>
               <p>
                 Most recently, I built the{" "}
                 <strong className="text-[#171717]">Chewy Customer Simulator</strong>,
-                a Realtime API-powered roleplay platform that cut projected
-                platform spend by 80% and reduced agent time-to-competence from
-                6 weeks to 2.5. I also built the{" "}
+                a Realtime API-powered voice agent system that handles thousands
+                of daily sessions. Cut projected platform spend by 80% and
+                reduced operator time-to-competence from 6 weeks to 2.5. I also
+                built the{" "}
                 <strong className="text-[#171717]">Phoenix SOP Navigator</strong>,
                 a retrieval-constrained AI system for policy-accurate guidance,
                 and Codex-powered automation pipelines that handle content
@@ -48,17 +49,14 @@ export default function About() {
               </p>
               <p>
                 Before Chewy, I spent 7+ years at Expedia Group and 3 years at
-                Microsoft shipping learning and performance systems at scale. My
-                edge: 15+ years designing systems for how people actually learn,
-                adopt tools, and change behavior. Most AI engineers build for
-                specs. I build for humans — so the systems I ship actually get
-                used.
+                Microsoft shipping production systems at scale. My edge: 15+
+                years building systems at the intersection of production AI and
+                real-world behavior. Most engineers optimize for accuracy. I
+                optimize for adoption — so systems I ship get used, not shelved.
               </p>
               <p>
-                I&apos;m especially interested in applied AI roles that move beyond
-                experimentation into production systems — voice AI, RAG
-                pipelines, agent workflows, and AI-enabled operational
-                transformation.
+                I&apos;m looking for Senior AI Engineer roles shipping production
+                systems — voice AI, RAG, agent workflows, and AI infrastructure.
               </p>
             </div>
 

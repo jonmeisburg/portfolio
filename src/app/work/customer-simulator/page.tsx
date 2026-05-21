@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Customer Simulator — Jon Meisburg",
   description:
-    "Real-time voice simulation using OpenAI Realtime API. Agents practice customer conversations against a lifelike AI opponent — deployed and used daily in production training.",
+    "Production voice agent system for customer-facing teams. Built on OpenAI Realtime API with custom retrieval layer and automated coaching pipeline. Deployed daily.",
 };
 
 export default function CustomerSimulatorPage() {
@@ -47,9 +47,10 @@ export default function CustomerSimulatorPage() {
                 Customer Simulator
               </h1>
               <p className="text-lg md:text-xl text-[#4d4d4d] leading-relaxed mb-10">
-                A real-time voice simulation system built on OpenAI&apos;s
-                Realtime API. Agents practice customer conversations against a
-                lifelike AI opponent — deployed daily in production training.
+                Production voice agent system for customer-facing teams. Built
+                on OpenAI Realtime API with custom retrieval layer and
+                automated coaching pipeline. Handles thousands of daily
+                sessions with sub-second latency.
               </p>
 
               {/* Metrics row */}
@@ -86,20 +87,20 @@ export default function CustomerSimulatorPage() {
                   The Problem
                 </span>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-6">
-                  Training customer agents at scale is expensive and slow
+                  Customer-facing teams need realistic practice at scale
                 </h2>
                 <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
                   <p>
-                    Traditional agent training relies on human role-players —
-                    costly, inconsistent, and impossible to scale. Agents
+                    Traditional onboarding relies on human role-players —
+                    costly, inconsistent, and impossible to scale. New hires
                     graduate unprepared for real customer conversations,
                     driving up handle time and error rates.
                   </p>
                   <p>
                     The existing simulation platform cost $800K annually
-                    and required 6 weeks to get new hires to baseline
-                    competence. Leaders needed a system that could train
-                    more agents, faster, without sacrificing quality.
+                    and required 6 weeks to get operators to baseline
+                    performance. The team needed a system that could onboard
+                    more people faster, without sacrificing quality.
                   </p>
                 </div>
               </div>
@@ -300,8 +301,8 @@ export default function CustomerSimulatorPage() {
               Outcomes that matter
             </h2>
             <p className="text-lg text-[#808080] leading-relaxed mb-10 max-w-2xl">
-              The system replaced a $800K annual training platform and
-              became the primary practice tool for over 2,000 agents.
+              The system replaced a $800K annual simulation platform and
+              became the primary practice tool for over 2,000 operators.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -318,13 +319,13 @@ export default function CustomerSimulatorPage() {
                 },
                 {
                   metric: "2,000+",
-                  label: "Agents trained",
-                  detail: "Scaled across the support org with no additional human trainers.",
+                  label: "Operators onboarded",
+                  detail: "Scaled across the support org with no additional human role-players.",
                 },
                 {
                   metric: "+CSAT",
                   label: "New hires outperform tenured",
-                  detail: "Post-training CSAT scores from new agents exceeded historical tenured baselines.",
+                  detail: "Post-onboarding CSAT scores from new operators exceeded historical tenured baselines.",
                 },
               ].map((result) => (
                 <div

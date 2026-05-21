@@ -50,7 +50,7 @@ export default function Featured() {
               </span>
             </div>
             <h3 className="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#5e6ad2] transition-colors leading-snug">
-              ATD AI in L&D — Advanced Session
+              ATD AI in Practice — Advanced Session
             </h3>
             <p className="text-sm text-[#4d4d4d] leading-relaxed">
               Live case study: how I designed and evolved the Customer Simulator
@@ -72,12 +72,11 @@ export default function Featured() {
               </span>
             </div>
             <h3 className="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#5e6ad2] transition-colors leading-snug">
-              DevLearn 2018
+              DevLearn 2018 — Emerging Tech Session
             </h3>
             <p className="text-sm text-[#4d4d4d] leading-relaxed">
-              Selected to present at one of the largest conferences for
-              eLearning professionals. Session on emerging learning
-              technologies and engagement design.
+              Selected to present at DevLearn on emerging AI and simulation
+              technologies for operational teams. Watch the talk.
             </p>
           </a>
 
