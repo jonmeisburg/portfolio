@@ -53,9 +53,9 @@ export default function Featured() {
               ATD AI in Practice — Advanced Session
             </h3>
             <p className="text-sm text-[#4d4d4d] leading-relaxed">
-              Live case study: how I designed and evolved the Customer Simulator
-              from a GPT prototype to a production Realtime API system.
-              Design-first, not code-first.
+              Live case study: designing AI roleplay practice from concept to
+              functional prototype. Design-first approach to AI-powered
+              learning experiences.
             </p>
           </a>
 

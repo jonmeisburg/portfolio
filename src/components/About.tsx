@@ -25,38 +25,38 @@ export default function About() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.04em] text-[#171717] mb-6">
-              Production AI, built for real use
+              AI Product Engineer — design to production
             </h2>
             <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
               <p className="text-lg">
-                I&apos;m a Senior AI Engineer at Chewy, where I build production AI
-                systems — real-time voice agents, retrieval pipelines, and agent
-                automation — used by thousands of operators daily. My work sits at
-                the intersection of production AI infrastructure and real-world
-                operational workflows.
+                I design and build AI-powered systems that move from concept to
+                production. My work sits at the intersection of learning
+                experience design, AI prototyping, and full-stack engineering —
+                I'm as comfortable designing a coaching feedback model as I am
+                wiring an API to a vector database.
               </p>
               <p>
-                Most recently, I built the{" "}
-                <strong className="text-[#171717]">Chewy Customer Simulator</strong>,
-                a Realtime API-powered voice agent system that handles thousands
-                of daily sessions. Cut projected platform spend by 80% and
-                reduced operator time-to-competence from 6 weeks to 2.5. I also
-                built the{" "}
-                <strong className="text-[#171717]">Phoenix SOP Navigator</strong>,
-                a retrieval-constrained AI system for policy-accurate guidance,
-                and Codex-powered automation pipelines that handle content
-                generation, QA, and developer handoff.
+                Most recently, I designed and built an{" "}
+                <strong className="text-[#171717]">AI-powered roleplay platform</strong>
+                {" "}for customer-facing teams — a system that lets learners
+                practice realistic conversations, receive coaching-style
+                feedback, and build confidence before applying skills on the
+                job. I led the learning experience design, scenario design,
+                feedback design, and prototype development end to end.
               </p>
               <p>
-                Before Chewy, I spent 7+ years at Expedia Group and 3 years at
-                Microsoft shipping production systems at scale. My edge: 15+
-                years building systems at the intersection of production AI and
-                real-world behavior. Most engineers optimize for accuracy. I
-                optimize for adoption — so systems I ship get used, not shelved.
+                I also built a{" "}
+                <strong className="text-[#171717]">retrieval-constrained knowledge navigator</strong>
+                {" "}for policy-accurate guidance, and AI-powered automation
+                pipelines for content generation and QA workflows. Before
+                focusing on AI, I spent 10+ years at Expedia Group and
+                Microsoft shipping production systems at scale.
               </p>
               <p>
-                I&apos;m looking for Senior AI Engineer roles shipping production
-                systems — voice AI, RAG, agent workflows, and AI infrastructure.
+                My edge: 15+ years building systems at the intersection of
+                technology and real-world behavior. I don't just optimize for
+                accuracy — I optimize for adoption, so the systems I ship get
+                used, not shelved.
               </p>
             </div>
 
@@ -67,18 +67,18 @@ export default function About() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "OpenAI Realtime API",
+                  "AI Prototyping",
+                  "Learning Experience Design",
+                  "Prompt Engineering",
                   "RAG & Vector Search",
                   "AI Agents & Workflows",
-                  "Voice AI",
-                  "Codex & AI Coding Tools",
-                  "Python / TypeScript",
-                  "FastAPI",
-                  "PostgreSQL",
-                  "Redis",
-                  "Docker / AWS ECS",
-                  "Prompt Engineering",
+                  "React / TypeScript",
+                  "OpenAI APIs",
+                  "AWS (Lambda, DynamoDB, S3)",
+                  "CopilotKit",
+                  "Next.js",
                   "System Design",
+                  "Stakeholder Collaboration",
                 ].map((skill) => (
                   <span
                     key={skill}

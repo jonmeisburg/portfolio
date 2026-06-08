@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Customer Simulator — Jon Meisburg",
+  title: "AI Roleplay Practice — Jon Meisburg",
   description:
-    "Production voice agent system for customer-facing teams. Built on OpenAI Realtime API with custom retrieval layer and automated coaching pipeline. Deployed daily.",
+    "Designing an AI-powered roleplay experience for customer-facing teams. Safe practice, coaching feedback, and repeatable learning through AI simulation.",
 };
 
 export default function CustomerSimulatorPage() {
@@ -44,34 +44,29 @@ export default function CustomerSimulatorPage() {
                 Case Study
               </span>
               <h1 className="text-4xl md:text-5xl font-semibold tracking-[-0.04em] leading-[1.05] text-[#171717] mb-4">
-                Customer Simulator
+                Designing AI Roleplay Practice for Customer-Facing Teams
               </h1>
-              <p className="text-lg md:text-xl text-[#4d4d4d] leading-relaxed mb-10">
-                Production voice agent system for customer-facing teams. Built
-                on OpenAI Realtime API with custom retrieval layer and
-                automated coaching pipeline. Handles thousands of daily
-                sessions with sub-second latency.
+              <p className="text-lg md:text-xl text-[#4d4d4d] leading-relaxed mb-8">
+                How I designed a prototype AI-powered practice experience that
+                lets learners rehearse realistic customer conversations, receive
+                coaching-style feedback, and build confidence — all before
+                applying skills on the job.
               </p>
 
-              {/* Metrics row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {/* Role badges */}
+              <div className="flex flex-wrap gap-2">
                 {[
-                  { value: "80%", label: "Cost reduction" },
-                  { value: "2,000+", label: "Agents trained" },
-                  { value: "2.5x", label: "Faster to competence" },
-                  { value: "Daily", label: "Production use" },
-                ].map((metric) => (
-                  <div
-                    key={metric.label}
-                    className="p-4 rounded-xl bg-[#fafafa] shadow-border"
+                  "Learning Experience Design",
+                  "AI Prototype Development",
+                  "Scenario & Feedback Design",
+                  "Stakeholder Collaboration",
+                ].map((role) => (
+                  <span
+                    key={role}
+                    className="badge bg-[#fafafa] text-[#4d4d4d] shadow-border"
                   >
-                    <div className="text-2xl md:text-3xl font-semibold text-[#171717] tracking-[-0.02em]">
-                      {metric.value}
-                    </div>
-                    <div className="text-xs text-[#808080] mt-1">
-                      {metric.label}
-                    </div>
-                  </div>
+                    {role}
+                  </span>
                 ))}
               </div>
             </div>
@@ -87,109 +82,137 @@ export default function CustomerSimulatorPage() {
                   The Problem
                 </span>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-6">
-                  Customer-facing teams need realistic practice at scale
+                  Customer-facing teams need realistic practice — before
+                  customer experience is at risk
                 </h2>
                 <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
                   <p>
-                    Traditional onboarding relies on human role-players —
-                    costly, inconsistent, and impossible to scale. New hires
-                    graduate unprepared for real customer conversations,
-                    driving up handle time and error rates.
+                    In customer service environments, traditional e-learning
+                    teaches policies and product knowledge — but none of it
+                    prepares someone for what it actually feels like to handle
+                    a frustrated customer, an urgent situation, or a complex
+                    problem in real time.
                   </p>
                   <p>
-                    The existing simulation platform cost $800K annually
-                    and required 6 weeks to get operators to baseline
-                    performance. The team needed a system that could onboard
-                    more people faster, without sacrificing quality.
+                    Existing practice options were limited. Peer roleplay
+                    required scheduling and facilitation. Live call shadowing
+                    put the customer experience at risk while the learner was
+                    still building competence. There was no scalable way to
+                    give every agent realistic, repeatable practice with
+                    consistent coaching feedback.
+                  </p>
+                  <p className="font-medium text-[#171717]">
+                    The core challenge: how do you create a psychologically
+                    safe space for deliberate practice — where learners can
+                    fail without consequences, try again, and improve with
+                    each attempt?
                   </p>
                 </div>
               </div>
-              <div className="rounded-xl bg-[#fafafa] shadow-border-card aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 rounded-lg bg-[#171717] flex items-center justify-center mx-auto mb-2">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M12 2a3 3 0 00-3 3v14a3 3 0 006 0V5a3 3 0 00-3-3z"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M19 10v2a7 7 0 01-7 7m-7-9v2a7 7 0 007 7"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-[#808080] font-mono">
-                    Project screenshot placeholder
-                  </span>
+              <div className="rounded-xl bg-[#fafafa] shadow-border-card p-8 flex items-center">
+                <div className="space-y-5">
+                  {[
+                    {
+                      label: "Static e-learning",
+                      issue: "Teaches knowledge, not conversation skills",
+                    },
+                    {
+                      label: "Peer roleplay",
+                      issue:
+                        "Hard to schedule, inconsistent feedback quality",
+                    },
+                    {
+                      label: "Live call shadowing",
+                      issue:
+                        "Customer experience is already at risk",
+                    },
+                    {
+                      label: "The gap",
+                      issue:
+                        "No scalable way to practice realistic conversations safely",
+                    },
+                  ].map((item) => (
+                    <div key={item.label} className="flex gap-3 items-start">
+                      <div className="w-5 h-5 rounded-full bg-[#ebf5ff] flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-[10px] font-semibold text-[#0068d6]">
+                          ✕
+                        </span>
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-[#171717]">
+                          {item.label}
+                        </div>
+                        <div className="text-xs text-[#808080]">
+                          {item.issue}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Solution */}
+        {/* Design Approach */}
         <section className="py-16 border-t border-[rgba(0,0,0,0.06)]">
           <div className="max-w-[1200px] mx-auto px-6">
             <span className="badge bg-[#ebf5ff] text-[#0068d6] mb-4">
-              The Solution
+              Design Approach
             </span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-6 max-w-2xl">
-              An AI opponent that sounds and behaves like a real customer
+              Five principles that shaped the learning experience
             </h2>
             <p className="text-lg text-[#4d4d4d] leading-relaxed mb-10 max-w-2xl">
-              Built on OpenAI&apos;s Realtime API, the simulator generates
-              dynamic voice conversations that adapt to the agent&apos;s
-              responses. No scripts. No pre-recorded audio. Every practice
-              session is unique.
+              I grounded the design in established learning principles —
+              adapted for what AI made newly possible.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Real-time voice synthesis",
-                  desc: "Natural-sounding customer voices with emotional range — frustration, confusion, urgency.",
+                  num: "01",
+                  title: "Realistic practice",
+                  desc: "Rather than multiple-choice scenarios or scripted branching, I designed an open-ended conversation experience where the AI customer responds dynamically — expressing emotion, asking unexpected questions, and reacting to the learner's choices the way a real customer would.",
                 },
                 {
-                  title: "Dynamic scenario generation",
-                  desc: "AI generates unique situations on demand. Agents never practice the same conversation twice.",
+                  num: "02",
+                  title: "Psychological safety",
+                  desc: "Deliberate practice requires a low-stakes environment where failure is part of the learning process. The design emphasized privacy, repeatability, and judgment-free feedback. Learners could practice as many times as they wanted.",
                 },
                 {
-                  title: "Adaptive difficulty",
-                  desc: "System adjusts complexity based on agent performance, pushing them just past their comfort zone.",
+                  num: "03",
+                  title: "Repeatable attempts",
+                  desc: "I designed scenarios at progressive difficulty levels — from straightforward customer needs to complex, emotionally charged situations. Learners could start where they felt comfortable and advance as their confidence grew.",
                 },
                 {
-                  title: "Live coaching feedback",
-                  desc: "Post-session analysis identifies missed opportunities, tone issues, and policy gaps.",
+                  num: "04",
+                  title: "Coaching-style feedback",
+                  desc: "After each session, the system generates a coaching report that scores performance against defined quality behaviors, highlights specific strengths with examples from the conversation, identifies growth areas with concrete suggestions, and recommends a next practice step.",
                 },
                 {
-                  title: "Production integration",
-                  desc: "Embedded into the daily training workflow. Agents use it as part of their regular rotation.",
+                  num: "05",
+                  title: "Clear success criteria",
+                  desc: "Learners need to know what 'good' looks like before they start. Each scenario includes transparent evaluation criteria — what behaviors are being assessed, what the expected path looks like, and what a strong performance demonstrates.",
                 },
                 {
-                  title: "Scalable architecture",
-                  desc: "Handles thousands of concurrent sessions without human intervention or scheduling.",
+                  num: "06",
+                  title: "Manager tooling",
+                  desc: "The most common bottleneck in roleplay training is creation and administration. I invested as much design attention in the manager experience — create, test, refine, assign, monitor — as in the learner experience. Adoption depends on both.",
                 },
-              ].map((feature) => (
+              ].map((principle) => (
                 <div
-                  key={feature.title}
+                  key={principle.num}
                   className="p-6 rounded-xl bg-white shadow-border-card"
                 >
+                  <div className="text-xs font-semibold text-[#0068d6] font-mono mb-3">
+                    {principle.num}
+                  </div>
                   <h3 className="text-base font-semibold text-[#171717] mb-2">
-                    {feature.title}
+                    {principle.title}
                   </h3>
                   <p className="text-sm text-[#4d4d4d] leading-relaxed">
-                    {feature.desc}
+                    {principle.desc}
                   </p>
                 </div>
               ))}
@@ -197,59 +220,54 @@ export default function CustomerSimulatorPage() {
           </div>
         </section>
 
-        {/* Architecture / How It Works */}
+        {/* Design Decisions */}
         <section className="py-16 border-t border-[rgba(0,0,0,0.06)] bg-[#fafafa]">
           <div className="max-w-[1200px] mx-auto px-6">
             <span className="badge bg-[#171717] text-white mb-4">
-              Architecture
+              Design Decisions
             </span>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-10">
-              How it works
+              Why I made the choices I did
             </h2>
 
             <div className="space-y-6">
               {[
                 {
-                  step: "01",
-                  title: "Agent initiates practice session",
-                  desc: "From the training dashboard, the agent selects a scenario type and hits start. No scheduling, no human setup.",
+                  q: "Why open-ended roleplay instead of branching scenarios?",
+                  a: "Branching scenarios are predictable — after one or two attempts, the learner knows every path. An AI-driven conversation is different every time. The customer responds naturally, which keeps the practice challenging and transferable to real calls.",
                 },
                 {
-                  step: "02",
-                  title: "AI generates a live customer profile",
-                  desc: "The system creates a unique customer with a backstory, emotional state, and specific problem — all in real time.",
+                  q: "Why both chat and voice?",
+                  a: "Different teams work in different channels. Chat develops written communication, de-escalation, and clear documentation. Voice develops pacing, tone, active listening, and empathy. Supporting both meant the prototype could serve a broader range of learning needs.",
                 },
                 {
-                  step: "03",
-                  title: "Voice conversation begins",
-                  desc: "Using OpenAI Realtime API, the agent hears a natural voice and responds as they would on a real call.",
+                  q: "Why structured coaching feedback instead of a simple score?",
+                  a: "A score alone tells a learner whether they passed or failed but gives them nothing to act on. I designed the feedback to be diagnostic — breaking performance down by specific behaviors, citing evidence from the conversation, and offering a clear path forward. This turns assessment into a learning tool.",
                 },
                 {
-                  step: "04",
-                  title: "AI adapts in real time",
-                  desc: "The customer persona shifts based on how well the agent handles the conversation — escalating, calming, or introducing new variables.",
+                  q: "Why invest in manager tooling from the start?",
+                  a: "A great learner experience doesn't matter if managers can't or won't assign the practice. The create → test → refine → publish → assign → monitor workflow needed as much design attention as the learner workflow. Both sides of the platform had to work for either to succeed.",
                 },
                 {
-                  step: "05",
-                  title: "Session ends, feedback generated",
-                  desc: "Within seconds, the agent sees what they did well, what they missed, and specific coaching points.",
+                  q: "Why build a functional prototype instead of wireframes?",
+                  a: "Building with real AI infrastructure — even in a limited form — surfaced design questions that static mockups never would: How fast should the AI respond? What happens when it misunderstands? How do you handle edge cases gracefully? These questions only emerged because the prototype was real.",
                 },
               ].map((item) => (
                 <div
-                  key={item.step}
+                  key={item.q}
                   className="flex gap-6 items-start"
                 >
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#ebf5ff] flex items-center justify-center">
-                    <span className="text-xs font-semibold text-[#0068d6] font-mono">
-                      {item.step}
+                    <span className="text-sm font-semibold text-[#0068d6]">
+                      ?
                     </span>
                   </div>
                   <div className="pt-1">
                     <h3 className="text-base font-semibold text-[#171717] mb-1">
-                      {item.title}
+                      {item.q}
                     </h3>
                     <p className="text-sm text-[#4d4d4d] leading-relaxed">
-                      {item.desc}
+                      {item.a}
                     </p>
                   </div>
                 </div>
@@ -258,91 +276,70 @@ export default function CustomerSimulatorPage() {
           </div>
         </section>
 
-        {/* Tech Stack */}
+        {/* What I Learned */}
         <section className="py-16 border-t border-[rgba(0,0,0,0.06)]">
           <div className="max-w-[1200px] mx-auto px-6">
-            <span className="badge bg-[#fafafa] text-[#808080] shadow-border mb-4">
-              Tech Stack
+            <span className="badge bg-[#ebf5ff] text-[#0068d6] mb-4">
+              What I Learned
             </span>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-8">
-              What I built with
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-4">
+              Takeaways from designing AI-supported practice
             </h2>
-
-            <div className="flex flex-wrap gap-3">
-              {[
-                "OpenAI Realtime API",
-                "Python / FastAPI",
-                "WebRTC",
-                "PostgreSQL",
-                "Redis",
-                "Docker",
-                "AWS ECS",
-                "React / TypeScript",
-                "Tailwind CSS",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="badge bg-[#fafafa] text-[#171717] shadow-border text-sm px-3 py-1.5"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Results */}
-        <section className="py-16 border-t border-[rgba(0,0,0,0.06)] bg-[#171717]">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <span className="badge bg-white/10 text-white/80 mb-4">
-              Results
-            </span>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-white mb-4">
-              Outcomes that matter
-            </h2>
-            <p className="text-lg text-[#808080] leading-relaxed mb-10 max-w-2xl">
-              The system replaced a $800K annual simulation platform and
-              became the primary practice tool for over 2,000 operators.
+            <p className="text-lg text-[#4d4d4d] leading-relaxed mb-10 max-w-2xl">
+              This project taught me as much about AI product design as it did
+              about learning experience design.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  metric: "80%",
-                  label: "Platform cost reduction",
-                  detail: "From $800K to $160K annually by replacing human role-players with AI simulation.",
+                  takeaway: "AI changes what's possible in learning design",
+                  detail:
+                    "Before this prototype, realistic conversation practice at scale wasn't feasible — it required human facilitators, scheduling, and subjective evaluation. AI simulation and evaluation removed those constraints, making it possible to give every learner unlimited, high-quality practice with consistent coaching.",
                 },
                 {
-                  metric: "6 → 2.5",
-                  label: "Weeks to competence",
-                  detail: "New hires reach performance baseline in under 3 weeks instead of 6.",
+                  takeaway: "Feedback design is the hardest part",
+                  detail:
+                    "Getting the AI to simulate a realistic customer was relatively straightforward. Getting coaching feedback that was accurate, specific, fair, and actionable — aligned to real quality standards — required far more iteration. The prompt engineering and rubric design took more effort than any other component.",
                 },
                 {
-                  metric: "2,000+",
-                  label: "Operators onboarded",
-                  detail: "Scaled across the support org with no additional human role-players.",
+                  takeaway: "Psychological safety is a feature",
+                  detail:
+                    "Early designs framed the experience as a scored simulation. User feedback quickly surfaced that this created anxiety rather than motivation. Reframing around practice, growth, and coaching — with clear messaging that attempts were private and repeatable — completely changed how learners engaged.",
                 },
                 {
-                  metric: "+CSAT",
-                  label: "New hires outperform tenured",
-                  detail: "Post-onboarding CSAT scores from new operators exceeded historical tenured baselines.",
+                  takeaway: "Adoption is a two-sided design problem",
+                  detail:
+                    "I learned that both the learner and the manager experience needed equal design investment. A great practice experience doesn't matter if managers can't create, assign, and monitor it. The platform had to work for both personas or neither would use it.",
                 },
-              ].map((result) => (
+              ].map((item) => (
                 <div
-                  key={result.label}
-                  className="p-6 rounded-xl bg-white/5 border border-white/10"
+                  key={item.takeaway}
+                  className="p-6 rounded-xl bg-white shadow-border-card"
                 >
-                  <div className="text-3xl font-semibold text-white tracking-[-0.02em] mb-1">
-                    {result.metric}
-                  </div>
-                  <div className="text-sm font-medium text-[#7170ff] mb-2">
-                    {result.label}
-                  </div>
-                  <p className="text-sm text-[#808080] leading-relaxed">
-                    {result.detail}
+                  <h3 className="text-base font-semibold text-[#171717] mb-2">
+                    {item.takeaway}
+                  </h3>
+                  <p className="text-sm text-[#4d4d4d] leading-relaxed">
+                    {item.detail}
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Disclaimer */}
+        <section className="py-12 border-t border-[rgba(0,0,0,0.06)] bg-[#fafafa]">
+          <div className="max-w-[1200px] mx-auto px-6">
+            <div className="max-w-2xl">
+              <p className="text-xs text-[#808080] leading-relaxed">
+                <strong>Confidentiality note:</strong> This case study has been
+                generalized for portfolio purposes. It does not include
+                confidential information, customer data, internal tools,
+                proprietary workflows, business results, screenshots, or
+                company-owned training materials. Views are my own.
+              </p>
             </div>
           </div>
         </section>
@@ -352,10 +349,10 @@ export default function CustomerSimulatorPage() {
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.03em] text-[#171717] mb-4">
-                See what&apos;s next
+                See what's next
               </h2>
               <p className="text-lg text-[#4d4d4d] leading-relaxed mb-8">
-                This is one of several AI systems I&apos;ve built and shipped.
+                This is one of several AI systems I've designed and built.
                 Check out the others or get in touch if you want to talk shop.
               </p>
               <div className="flex flex-wrap gap-3">

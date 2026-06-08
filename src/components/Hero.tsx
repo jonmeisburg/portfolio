@@ -20,11 +20,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-semibold tracking-[-0.04em] leading-[1.05] text-[#171717] mb-5">
-            I build applied AI systems — tools, workflows, and agents that actually ship.
+            AI Product Engineer — I design and build systems that learn, adapt, and ship.
           </h1>
 
           <p className="text-lg md:text-xl leading-relaxed text-[#4d4d4d] mb-8 max-w-2xl">
-            Senior AI Engineer at Chewy. Built production systems used by 2,000+ agents daily. Specialized in OpenAI Realtime API, RAG pipelines, and agent workflows.
+            I bridge product thinking with AI engineering: designing experiences, prototyping with real APIs, and building systems that move from concept to production.
           </p>
 
           <div className="flex flex-wrap gap-3">

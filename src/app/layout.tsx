@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jon Meisburg — Senior AI Engineer",
-  description: "Senior AI Engineer building production systems — voice AI, RAG pipelines, agent workflows. Not prototypes. Production AI that ships.",
+  title: "Jon Meisburg — AI Product Engineer",
+  description: "AI Product Engineer — designing and building AI-powered systems from concept to production. Learning experiences, agent workflows, and tools that ship.",
 };
 
 export default function RootLayout({

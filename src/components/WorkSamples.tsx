@@ -45,16 +45,15 @@ export default function WorkSamples() {
                 <span className="text-xs font-medium text-[#5e6ad2] font-mono uppercase tracking-wide">Case Study</span>
               </div>
               <h3 className="text-2xl font-semibold tracking-[-0.02em] text-[#171717] mb-3 group-hover:text-[#5e6ad2] transition-colors">
-                Customer Simulator
+                AI Roleplay Practice Platform
               </h3>
               <p className="text-sm md:text-base text-[#4d4d4d] leading-relaxed mb-4">
-                Production voice agent system built on OpenAI Realtime API.
-                Handles thousands of daily sessions with sub-second latency.
-                80% platform cost reduction. 6 weeks → 2.5 weeks
-                time-to-competence.
+                Designed and prototyped an AI-powered practice experience for
+                customer-facing teams — realistic conversations, coaching
+                feedback, and repeatable learning at scale.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Voice AI", "Realtime API", "Agents"].map((tag) => (
+                {["Learning Design", "AI Prototyping", "Coaching Systems"].map((tag) => (
                   <span key={tag} className="badge bg-[#fafafa] text-[#4d4d4d] shadow-border text-[11px]">{tag}</span>
                 ))}
               </div>
