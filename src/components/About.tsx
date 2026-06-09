@@ -25,56 +25,52 @@ export default function About() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.04em] text-[#171717] mb-6">
-              AI Product Manager — design to production
+              AI Product Engineer — from concept to production
             </h2>
 
-            {/* Opening Anchor */}
+            {/* 1. Opening Anchor */}
             <p className="text-lg text-[#171717] font-medium leading-relaxed mb-6">
-              I&apos;m Jon Meisburg. I help organizations turn AI capabilities
-              into products that solve real problems.
+              I&apos;m Jon Meisburg — an AI Product Engineer who designs systems
+              people adopt and builds them myself end-to-end.
             </p>
 
-            {/* Core Perspective */}
+            {/* 2. Core Philosophy */}
             <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
               <p>
-                I believe the hardest part of AI isn&apos;t the model — it&apos;s
-                the bridge between what the technology can do and what people
-                actually need. My approach starts with the outcome: what changes
-                for the user, the team, or the business if this works? From
-                there, I work backward through experience design, technical
-                architecture, and adoption strategy. I don&apos;t optimize for
-                demos — I optimize for systems that get used.
+                The hardest problem with modern tech isn&apos;t making things smart
+                — it&apos;s figuring out what problems are actually worth solving.
+                Most organizations optimize for accuracy first (building the most
+                advanced model) and then figure out how to make humans use it as an
+                afterthought. I&apos;ve always optimized for adoption: if this system
+                doesn&apos;t fit into a real person&apos;s actual workflow, the
+                technology is useless. My approach always starts backward from that
+                end-goal — the human outcome — and works its way through design,
+                architecture, and technical build until shipping something people
+                actually want to use.
               </p>
             </div>
 
-            {/* Supporting Evidence */}
+            {/* 3. Supporting Evidence */}
             <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
               <p>
-                Most recently, I designed and built an{" "}
-                <strong className="text-[#171717]">AI-powered roleplay platform</strong>
-                {" "}for customer-facing teams — a system that lets learners
-                practice realistic conversations, receive coaching-style
-                feedback, and build confidence before applying skills on the
-                job. I led the learning experience design, scenario design,
-                feedback design, and prototype development end to end.
-              </p>
-              <p>
-                I also built a{" "}
-                <strong className="text-[#171717]">retrieval-constrained knowledge navigator</strong>
-                {" "}for policy-accurate guidance, and AI-powered automation
-                pipelines for content generation and QA workflows. Before
-                focusing on AI, I spent 10+ years at Expedia Group and
-                Microsoft shipping production systems at scale.
+                Most recently, I built a company-wide roleplay simulation platform at Chewy — where customer service agents practice difficult conversations with AI for real-world coaching — from concept to production entirely on my own. Before that: a retrieval-constrained knowledge navigator for policy-accurate guidance and automated content/workflow pipelines powered by AI models. Earlier in my career at Expedia Group and Microsoft I designed and shipped complex digital platforms requiring massive scale, multi-stakeholder alignment, and rigorous quality standards across every release cycle. Over the past 15+ years, I&apos;ve spent more of my time sitting on the bridge between what&apos;s technically possible versus what actually gets adopted than anything else — which is exactly how I approach building AI products today.
               </p>
             </div>
 
-            {/* Personal Dimension */}
+            {/* 4. Personal Dimension */}
             <p className="text-[#4d4d4d] leading-relaxed mb-6">
-              Outside of work, I&apos;m a lifelong learner who enjoys the craft
-              of building — whether it&apos;s a new AI workflow, a knowledge
-              system, or a better way to make coffee. I live in Seattle and
-              spend my free time exploring how AI is reshaping the way we think
-              about work, creativity, and learning.
+              I started working with AI the day ChatGPT launched and immediately saw
+              it as the natural next step for everything I&apos;ve been doing — building
+              systems people adopt, end-to-end. It didn&apos;t replace 15+ years of
+              product work, it multiplied it. Outside of work, I&apos;m a dad to three
+              under five and a marathon runner, which means my life runs on systems
+              and stubbornness. I do my best thinking on long Sunday runs, usually
+              talking to my AI agents via voice while logging miles. At home, AI has
+              quietly become part of how we play — I make the kids custom storybooks,
+              generate coloring pages from their photos, and we do Gemini Live drawing
+              games on the tablet where they try to fool it. They think it&apos;s just
+              fun. I think it&apos;s the whole point — building things people actually
+              want to use, even if those people are four years old.
             </p>
 
             {/* Skills */}
