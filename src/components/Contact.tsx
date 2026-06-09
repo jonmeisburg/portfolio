@@ -8,7 +8,9 @@ export default function Contact() {
             Let&apos;s build something
           </h2>
           <p className="text-lg text-[#808080] leading-relaxed mb-10">
-            If you need someone who can design, build, and ship applied AI systems — not consult, not pitch, but actually build — let&apos;s talk.
+            If you&apos;ve got an interesting problem to solve, a role you think
+            I&apos;d be a fit for, or just want to connect, send me a note. I
+            enjoy talking with people who are building things.
           </p>
 
           {/* Contact methods */}
@@ -39,10 +41,28 @@ export default function Contact() {
             </a>
           </div>
 
-          {/* Location */}
+          {/* LinkedIn */}
           <div className="mt-6 text-sm text-[#808080] flex items-center justify-center gap-2">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
-            Seattle, WA
+            <span>or find me on</span>
+            <a
+              href="https://linkedin.com/in/jonmeisburg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#7170ff] hover:text-white transition-colors font-medium inline-flex items-center gap-1.5"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
+                  fill="currentColor"
+                />
+              </svg>
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>

@@ -25,16 +25,30 @@ export default function About() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.04em] text-[#171717] mb-6">
-              AI Product Engineer — design to production
+              AI Product Manager — design to production
             </h2>
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed">
-              <p className="text-lg">
-                I design and build AI-powered systems that move from concept to
-                production. My work sits at the intersection of learning
-                experience design, AI prototyping, and full-stack engineering —
-                I'm as comfortable designing a coaching feedback model as I am
-                wiring an API to a vector database.
+
+            {/* Opening Anchor */}
+            <p className="text-lg text-[#171717] font-medium leading-relaxed mb-6">
+              I&apos;m Jon Meisburg. I help organizations turn AI capabilities
+              into products that solve real problems.
+            </p>
+
+            {/* Core Perspective */}
+            <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
+              <p>
+                I believe the hardest part of AI isn&apos;t the model — it&apos;s
+                the bridge between what the technology can do and what people
+                actually need. My approach starts with the outcome: what changes
+                for the user, the team, or the business if this works? From
+                there, I work backward through experience design, technical
+                architecture, and adoption strategy. I don&apos;t optimize for
+                demos — I optimize for systems that get used.
               </p>
+            </div>
+
+            {/* Supporting Evidence */}
+            <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
               <p>
                 Most recently, I designed and built an{" "}
                 <strong className="text-[#171717]">AI-powered roleplay platform</strong>
@@ -52,13 +66,16 @@ export default function About() {
                 focusing on AI, I spent 10+ years at Expedia Group and
                 Microsoft shipping production systems at scale.
               </p>
-              <p>
-                My edge: 15+ years building systems at the intersection of
-                technology and real-world behavior. I don't just optimize for
-                accuracy — I optimize for adoption, so the systems I ship get
-                used, not shelved.
-              </p>
             </div>
+
+            {/* Personal Dimension */}
+            <p className="text-[#4d4d4d] leading-relaxed mb-6">
+              Outside of work, I&apos;m a lifelong learner who enjoys the craft
+              of building — whether it&apos;s a new AI workflow, a knowledge
+              system, or a better way to make coffee. I live in Seattle and
+              spend my free time exploring how AI is reshaping the way we think
+              about work, creativity, and learning.
+            </p>
 
             {/* Skills */}
             <div className="mt-8 pt-8 border-t border-[rgba(0,0,0,0.06)]">
@@ -87,42 +104,6 @@ export default function About() {
                     {skill}
                   </span>
                 ))}
-              </div>
-            </div>
-
-            {/* Education */}
-            <div className="mt-8 pt-8 border-t border-[rgba(0,0,0,0.06)]">
-              <h3 className="text-xs font-mono uppercase tracking-wider text-[#808080] mb-4">
-                Education & Credentials
-              </h3>
-              <div className="space-y-3">
-                <div>
-                  <div className="text-sm font-medium text-[#171717]">
-                    University of Washington
-                  </div>
-                  <div className="text-xs text-[#808080]">
-                    Certificate in Software Product Management — AI Product
-                    Development, Go-to-Market Strategy
-                  </div>
-                </div>
-                <div>
-                  <div className="text-sm font-medium text-[#171717]">
-                    Oregon State University
-                  </div>
-                  <div className="text-xs text-[#808080]">
-                    Postgraduate Computer Science — Data Structures, Algorithms,
-                    Discrete Mathematics, OOP
-                  </div>
-                </div>
-                <div>
-                  <div className="text-sm font-medium text-[#171717]">
-                    Anthropic, Microsoft, Google, DeepLearning.AI
-                  </div>
-                  <div className="text-xs text-[#808080]">
-                    AI Fluency, Generative AI, AI for Everyone — multiple
-                    certifications
-                  </div>
-                </div>
               </div>
             </div>
 
