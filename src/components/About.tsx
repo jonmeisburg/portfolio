@@ -25,7 +25,7 @@ export default function About() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.04em] text-[#171717] mb-6">
-              AI Product Engineer — from concept to production
+              About Jon Meisburg
             </h2>
 
             <p className="text-[#4d4d4d] leading-relaxed mb-6">
