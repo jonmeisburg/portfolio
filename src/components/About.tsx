@@ -43,36 +43,6 @@ export default function About() {
               want to use, even if those people are four years old.
             </p>
 
-            {/* Skills */}
-            <div className="mt-8 pt-8 border-t border-[rgba(0,0,0,0.06)]">
-              <h3 className="text-xs font-mono uppercase tracking-wider text-[#808080] mb-4">
-                What I Build With
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "AI Prototyping",
-                  "Learning Experience Design",
-                  "Prompt Engineering",
-                  "RAG & Vector Search",
-                  "AI Agents & Workflows",
-                  "React / TypeScript",
-                  "OpenAI APIs",
-                  "AWS (Lambda, DynamoDB, S3)",
-                  "CopilotKit",
-                  "Next.js",
-                  "System Design",
-                  "Stakeholder Collaboration",
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="badge bg-[#fafafa] text-[#4d4d4d] shadow-border"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
             {/* Social links */}
             <div className="mt-8 pt-8 border-t border-[rgba(0,0,0,0.06)] flex flex-wrap gap-4">
               <a
