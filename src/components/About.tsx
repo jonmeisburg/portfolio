@@ -28,36 +28,6 @@ export default function About() {
               AI Product Engineer — from concept to production
             </h2>
 
-            {/* 1. Opening Anchor */}
-            <p className="text-lg text-[#171717] font-medium leading-relaxed mb-6">
-              I&apos;m Jon Meisburg — an AI Product Engineer who designs systems
-              people adopt and builds them myself end-to-end.
-            </p>
-
-            {/* 2. Core Philosophy */}
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
-              <p>
-                The hardest problem with modern tech isn&apos;t making things smart
-                — it&apos;s figuring out what problems are actually worth solving.
-                Most organizations optimize for accuracy first (building the most
-                advanced model) and then figure out how to make humans use it as an
-                afterthought. I&apos;ve always optimized for adoption: if this system
-                doesn&apos;t fit into a real person&apos;s actual workflow, the
-                technology is useless. My approach always starts backward from that
-                end-goal — the human outcome — and works its way through design,
-                architecture, and technical build until shipping something people
-                actually want to use.
-              </p>
-            </div>
-
-            {/* 3. Supporting Evidence */}
-            <div className="space-y-4 text-[#4d4d4d] leading-relaxed mb-6">
-              <p>
-                Most recently, I built a company-wide roleplay simulation platform at Chewy — where customer service agents practice difficult conversations with AI for real-world coaching — from concept to production entirely on my own. Before that: a retrieval-constrained knowledge navigator for policy-accurate guidance and automated content/workflow pipelines powered by AI models. Earlier in my career at Expedia Group and Microsoft I designed and shipped complex digital platforms requiring massive scale, multi-stakeholder alignment, and rigorous quality standards across every release cycle. Over the past 15+ years, I&apos;ve spent more of my time sitting on the bridge between what&apos;s technically possible versus what actually gets adopted than anything else — which is exactly how I approach building AI products today.
-              </p>
-            </div>
-
-            {/* 4. Personal Dimension */}
             <p className="text-[#4d4d4d] leading-relaxed mb-6">
               I started working with AI the day ChatGPT launched and immediately saw
               it as the natural next step for everything I&apos;ve been doing — building
