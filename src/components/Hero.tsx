@@ -14,7 +14,7 @@ Currently at Chewy, where I took a full AI simulation and coaching platform from
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="#work" OK
+              href="#work"
               className="inline-flex items-center gap-2 text-sm font-medium bg-[#171717] text-white px-5 py-3 rounded-md hover:bg-[#333] transition-colors"
             >
               View case studies
